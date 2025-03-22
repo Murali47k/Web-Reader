@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Custom Audio Player</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Custom Floating Audio Player (hidden by default) -->
+  <div id="customPlayer" style="display:none;">
+    <button id="closeBtn">X</button>
+    <button id="playPauseBtn">Play</button>
+    <input type="range" id="progressBar" value="0" min="0" max="100" step="1" />
+    <span id="timeLabel">0:00 / 0:00</span>
+  </div>
+
+  <!-- Hidden audio element -->
+  <audio id="myAudio" src="" style="display:none;"></audio>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+

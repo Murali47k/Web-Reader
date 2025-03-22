@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Floating TTS Reader</title>
+  <!-- Link to the custom player's CSS -->
+  <link rel="stylesheet" href="audioplayer/styles.css">
+  <style>
+    /* Style for the floating Read button */
+    #readBtn {
+      position: fixed;
+      display: none;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 11000; /* Ensure it sits above other elements */
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Highlight any text on this page to have it read aloud. This is just an example paragraph.
+  </p>
+
+  <!-- Floating Read Button -->
+  <button id="readBtn">Read</button>
+
+  <!-- Custom Audio Player (initially hidden) -->
+  <div id="customPlayer" style="display:none;">
+    <button id="closeBtn">X</button>
+    <button id="playPauseBtn">Play</button>
+    <input type="range" id="progressBar" value="0" min="0" max="100" step="1" />
+    <span id="timeLabel">0:00 / 0:00</span>
+  </div>
+  
+  <!-- Hidden audio element -->
+  <audio id="myAudio" src="" style="display:none;"></audio>
+  
+  <!-- Include the custom player's JS -->
+  <script src="audioplayer/script.js"></script>
+</body>
+</html>
