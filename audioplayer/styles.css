@@ -3,7 +3,8 @@
     position: fixed;
     bottom: 20px;      /* or top, as you prefer */
     right: 20px;
-    width: 300px;
+    width: 170px;
+    height:40px;
     background-color: #222;
     color: #fff;
     padding: 10px;
