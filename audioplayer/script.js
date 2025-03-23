@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       isDragging = false;
     });
   
-    /* --- CUSTOM PLAYER CONTROLS --- */
+      /* --- CUSTOM PLAYER CONTROLS --- */
     let isPlaying = false;
     playPauseBtn.addEventListener('click', () => {
       if (!isPlaying) {
@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     myAudio.addEventListener('play', () => {
       isPlaying = true;
       playPauseBtn.textContent = 'Pause';
+      readBtn.style.display = 'none'; // Hide readBtn when the audio starts playing
     });
     myAudio.addEventListener('pause', () => {
       isPlaying = false;
@@ -76,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
       customPlayer.style.display = 'none';
       myAudio.pause();
     });
-  
+
     /* --- READ BUTTON LOGIC --- */
     // Show the Read button when text is selected
     document.addEventListener('mouseup', (e) => {
