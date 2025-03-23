@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "TTS Reader",
+    "version": "1.0",
+    "description": "Highlight text on any webpage and have it read aloud using TTS.",
+    "author": "Murali Karthick",
+    "action":{
+        "default_popup" : "index.html",
+        "default_title" : "TTS Reader"
+    }
+}
